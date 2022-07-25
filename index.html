@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width: device-width, initial-scale: 1.0"/>
+        <meta name="description" content="A web application that converts strings to binary and binary to strings"/>
+        <link rel="stylesheet" href="./styles.css" type="text/css" />
+        <title>Binary converter</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Convert sentences to binary</h1>
+                <form onsubmit="return false">
+                    <label>
+                        <legend>Write your text here: </legend><input id="stringToBin" type="text" />
+                    </label> 
+                    <label>
+                        <legend>binary: </legend><code id="binAnswer"></code>
+                    </label> 
+                    <input type="submit" onclick="stringAgent(document.getElementById('stringToBin').value)"/>
+                </form>
+                 
+            </section>
+            <section>
+                <h1>Convert binary to sentences</h1>
+                <form onsubmit="return false">
+                    <label>
+                        <legend>Write your binary here: </legend><input id="binToString" type="text" />
+                    </label> 
+                    <label>
+                        <legend>sentence: </legend><div id="stringAnswer"></div>
+                    </label> 
+                    <input type="submit" onclick="binaryAgent(document.getElementById('binToString').value)"/>
+                </form>
+                 
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body> 
+</html>
