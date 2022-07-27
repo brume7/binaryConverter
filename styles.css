@@ -50,6 +50,7 @@ input, code, div{
     height: 30px;
 }
 input[type= "submit"]{
+    background-color: aqua;
     margin-left: 20px;
     border-radius: 10px;
 }
