@@ -51,4 +51,5 @@ input, code, div{
 }
 input[type= "submit"]{
     margin-left: 20px;
+    border-radius: 10px;
 }
